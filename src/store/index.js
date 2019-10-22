@@ -4,6 +4,7 @@ const INITIAL_STATE = {
     data: [
         'React Native',
         'ReactJS',
+        'NodeJS',
     ],
 };
 

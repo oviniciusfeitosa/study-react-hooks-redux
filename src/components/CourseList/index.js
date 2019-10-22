@@ -1,13 +1,17 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
+function addCourseAction (title) {
+    return { type: 'ADD_COURSE', title };
+}
+
 export default function CourseList() {
 
     const courses = useSelector(state => state.data);
     const dispatch = useDispatch();
 
     function addCourse () {
-        dispatch({ type: 'ADD_COURSE', title: 'GraphQL' })
+        dispatch(addCourseAction('GraphQL'))
     };
 
   return (
